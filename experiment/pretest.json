@@ -1,18 +1,65 @@
 [
-{"question":"This is a Sample Question 1?",
+{"question":"1. Dry density of soil can be defined as the ratio of",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":"Weight of solids to total volume",
+            "b":"Weight of soil to the total volume of solids",
+            "c":"Unit weight of the soil to the unit weight of water ",
+            "d":"None"
           },
 "correctAnswer":"a"},
-{"question":"This is a Sample Question 2?",
+
+{"question":"2. The bulk density of coarse grained soils can be determined by ",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":"Sand replacement method",
+            "b":"Core cutter method",
+            "c":"Pycnometer method",
+            "d":"Torsion balance method"
           },
-"correctAnswer":"c"} 
+"correctAnswer":"a"}, 
+
+{"question":"3. The bulk density of clays can be determined by ",
+"answers":{
+            "a":"Core cutter method ",
+            "b":"Pycnometer method",
+            "c":"Torsion balance method",
+            "d":"Sand replacement method"
+          },
+"correctAnswer":"a"},
+
+{"question":"4. Unit weight of solids depends on",
+"answers":{
+            "a":"Compaction",
+            "b":"Consolidation",
+            "c":"Specific gravity",
+            "d":"Void ratio"
+          },
+"correctAnswer":"a"},
+
+{"question":"5. Bulk density, saturation density and dry density of soil varies upon ",
+"answers":{
+            "a":"Degree of compaction",
+            "b":"Degree of consolidation",
+            "c":"Water content",
+            "d":"Porosity"
+          },
+"correctAnswer":"d"}
+
+{"question":"6. Different soils have different unit weights",
+"answers":{
+            "a":"True",
+            "b":"False",
+            "c":"Cannot be answered",
+            "d":"Could not be answered"
+          },
+"correctAnswer":"a"},
+
+{"question":"7. Select the correct one",
+"answers":{
+            "a":"Unit weight of dry soil is greater than unit weight of wet soil",
+            "b":"For dry soils, dry unit weight is less than total unit weight",
+            "c":"Unit weight of soil increases due to submergence in water",
+            "d":"Unit weight of soil decreases due to submergence in water "
+          },
+"correctAnswer":"a"}
+
 ]

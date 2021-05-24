@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+		<link rel="stylesheet" href="./css/main.css">
+	</head>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+	<body class="page">
+		<div class="columns is-centered">
+			<div class="column has-text-centered">
+				<div class="instructions-box">
+					<div class="title is-4 instructions">Instructions</div>
+					<div id="procedure-message" class="procedure-message"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered is-mobile workspace">
+			<div id="apparatus" class="column has-text-centered is-narrow apparatus">
+				<div class="sidebar">
+					<div class="title is-5 menu-title">Apparatus Menu</div>
+					<a class="title is-6 line option" id="weight">Weighing Machine</a>
+					<a class="title is-6 line option" id="cutter">Cutter</a>
+					<a  class="title is-6 line option" id="soil">Soil Sample</a>
+					<div id="inputForm" class="input-form">
+						<div class="slidecontainer">
+							<p>Soil Mass(g): <span id="demo_soilMass"></span></p>
+							<input type="range" min="50" max="500" value="100" class="slider" id="soilMass">
+						</div>
+
+						<button id="submit" class="action-button add">Add</button>
+					</div>
+
+					<a class="title is-6 line option" id="dolly">Dolly</a>
+					<a  class="title is-6 line option" id="rammer">Rammer</a>
+				</div>
+			</div>
+
+			<div id="observations" class="column has-text-centered is-narrow observations">
+				<div class="sidebar">
+					<div class="title is-5 menu-title">Observations</div>
+					<div class="title is-6 line" id="output1"></div>
+					<div class="title is-6 line" id="output2"></div>
+					<div class="table-container">
+						<table id="table" class="table is-bordered is-fullwidth">
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="column has-text-centered simulation">
+				<div class="hero is-small">
+					<div class="hero-body">
+						<canvas id="main" class="main"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-mobile is-centered">
+			<div class="column has-text-centered">
+				<button id="restart" class="action-button">Restart</button>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/mathjs@9.2.0/lib/browser/math.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
 </html>

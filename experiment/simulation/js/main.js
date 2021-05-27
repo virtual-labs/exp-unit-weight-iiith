@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	const restartButton = document.getElementById('restart');
 	const instrMsg = document.getElementById('procedure-message');
+	const wetDenseStrg = "Wet Density (g/cm" + "3".sup() + ")", dryDenseStrg = "Dry Density (g/cm" + "3".sup() + ")";
 
 	restartButton.addEventListener('click', function() {restart();});
 
@@ -13,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	function logic(tableData)
 	{
-		const soilData = { 'Silt': randomNumber(22.5, 27.5), 'Sand': randomNumber(12, 16), 'Clay': randomNumber(30, 50) };
+		const soilWater = { 'Silt': randomNumber(22.5, 27.5), 'Sand': randomNumber(12, 16), 'Clay': randomNumber(30, 50) }, soilDensity = { 'Silt': 1.46, 'Sand': 1.43, 'Clay': 1.39 };
 		tableData.forEach(function(row, index) {
-			const ans = soilData[row['Soil Type']];
-			row['Water Content(%)'] = ans;
-			row['Dry Soil Mass(g)'] = ((1 - (ans / 100)) * wetSoilMass).toFixed(2);
+			const waterContent = soilWater[row['Soil Type']], ans = soilDensity[row['Soil Type']];
+			row[dryDenseStrg] = Number(ans);
+			row['Water Content(%)'] = Number(waterContent);
+			//row[wetDenseStrg] = (ans * (1 + waterContent / 100)).toFixed(2);
+			row['Dry Soil Mass(g)'] = (ans * (1 + waterContent / 100) * 800).toFixed(2);
 		});
 	};
 
@@ -65,22 +68,15 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			if(step === 2)
 			{
-				document.getElementById("output1").innerHTML = "Mass of cutter = " + String(10) + "g";
-			}
-
-			else if(step === 4)
-			{
-				document.getElementById("output2").innerHTML = "Mass of soil = " + String(wetSoilMass) + "g";
+				document.getElementById("output1").innerHTML = "Mass of cutter = " + String(10) + " g";
 			}
 
 			else if(step === 9)
 			{
+				document.getElementById("output2").innerHTML = "Volume of soil = 800 cm" + "3".sup();
 				logic(tableData);
-				for(let i = 0; i < tables.length; i += 1)
-				{
-					generateTableHead(tables[i], Object.keys(tableData[0]));
-					generateTable(tables[i], tableData);
-				}
+				generateTableHead(table, Object.keys(tableData[0]));
+				generateTable(table, tableData);
 
 				document.getElementById("apparatus").style.display = 'none';
 				document.getElementById("observations").style.width = '40%';
@@ -230,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	{
 		cutStep = false;
 		document.getElementById("output1").innerHTML = "Mass of cutter = ____ g";
-		document.getElementById("output2").innerHTML = "Mass of wet soil = ____ g";
+		document.getElementById("output2").innerHTML = "Volume of soil = ____ cm" + "3".sup();
 
 		objs = {
 			"weight": new weight(270, 240, 90, 190),
@@ -256,7 +252,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	{ 
 		window.clearTimeout(tmHandle); 
 
-		document.getElementById("inputForm").style.display = 'none';
 		document.getElementById("apparatus").style.display = 'block';
 		document.getElementById("observations").style.marginLeft = '0%';
 		document.getElementById("observations").style.width = '20%';
@@ -265,10 +260,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			document.getElementById("observations").style.width = '40%';
 		}
 
-		for(let i = 0; i < tables.length; i += 1)
-		{
-			tables[i].innerHTML = "";
-		}
+		table.innerHTML = "";
 		init();
 
 		tmHandle = window.setTimeout(draw, 1000 / fps); 
@@ -382,21 +374,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		return step;
 	};
 
-	const sliders = ["soilMass"];
-	sliders.forEach(function(elem, ind) {
-		const slider = document.getElementById(elem);
-		const output = document.getElementById("demo_" + elem);
-		output.innerHTML = slider.value; // Display the default slider value
-
-		slider.oninput = function() {
-			output.innerHTML = this.value;
-			if(ind === 0)
-			{
-				wetSoilMass = this.value;
-			}
-		};
-	});
-
 	function curvedArea(ctx, e, gradX, gradY)
 	{
 		ctx.bezierCurveTo(e[0], e[1] += gradY, e[0] += gradX, e[1] += gradY, e[0] += gradX, e[1]);
@@ -428,23 +405,16 @@ document.addEventListener('DOMContentLoaded', function(){
 	init();
 
 	const tableData = [
-		{ "Soil Type": "Silt", "Dry Soil Mass(g)": "", "Water Content(%)": "" },
-		{ "Soil Type": "Sand", "Dry Soil Mass(g)": "", "Water Content(%)": "" },
-		{ "Soil Type": "Clay", "Dry Soil Mass(g)": "", "Water Content(%)": "" },
+		{ "Soil Type": "Silt", "Dry Soil Mass(g)": "", "Water Content(%)": "" }, 
+		{ "Soil Type": "Sand", "Dry Soil Mass(g)": "", "Water Content(%)": "" }, 
+		{ "Soil Type": "Clay", "Dry Soil Mass(g)": "", "Water Content(%)": "" } 
 	];
 
 	const objNames = Object.keys(objs), extrasNames = Object.keys(extras);
 	objNames.forEach(function(elem, ind) {
 		const obj = document.getElementById(elem);
 		obj.addEventListener('click', function(event) {
-			if(elem === "soil")
-			{
-				enabled[step].pop();
-				document.getElementById("inputForm").style.display = 'block';
-				return;
-			}
-
-			else if(elem === "rammer")
+			if(elem === "rammer")
 			{
 				extrasKeys.push("soilPart");
 			}
@@ -460,13 +430,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		step = check(event, translate, step);
 	});
 
-	const submitButton = document.getElementById("submit"), tables = document.getElementsByClassName("table");
-	submitButton.addEventListener('click', function(event) {
-		document.getElementById("inputForm").style.display = 'none';
-		enabled[step].push("soil");
-		keys.push("soil");
-		step += 1;
-	});
+	const table = document.getElementsByClassName("table")[0];
 
 	function responsiveTable(x) {
 		if(x.matches)	// If media query matches

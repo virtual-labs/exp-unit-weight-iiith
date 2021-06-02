@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			row[dryDenseStrg] = Number(ans);
 			row['Water Content(%)'] = Number(waterContent);
 			//row[wetDenseStrg] = (ans * (1 + waterContent / 100)).toFixed(2);
-			row['Dry Soil Mass(g)'] = (ans * (1 + waterContent / 100) * 800).toFixed(2);
+			row['Wet Soil Mass(g)'] = (ans * (1 + waterContent / 100) * 800).toFixed(2);
 		});
 	};
 
@@ -382,14 +382,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	const fill = "#A9A9A9", border = "black", lineWidth = 1.5, fps = 150;
 	const msgs = [
-		"Add a 'Weighing Machine' from the apparatus menu.", 
-		"Add a 'Cutter' from the apparatus menu.",
+		"Click on 'Weighing Machine' in the apparatus menu to add a weighing machine to the workspace.", 
+		"Click on 'Cutter' in the apparatus menu to add a cutter to the workspace.",
 		"Click on the cutter to move it to the weighing machine and weigh it.",
-		"Set appropriate input values (Soil Mass) and add a 'Soil Sample' from the apparatus menu.",
+		"Click on 'Soil Sample' in the apparatus menu to add a soil sample to the workspace.",
 		"Click on the soil sample to even it out.",
 		"Click on the cutter to move it to the soil sample for cutting.",
-		"Add a 'Dolly' from the apparatus menu.", 
-		"Add a 'Rammer' from the apparatus menu.", 
+		"Click on 'Dolly' in the apparatus menu to add a dolly to the workspace.",
+		"Click on 'Rammer' in the apparatus menu to add a rammer to the workspace.",
 		"Click on the rammer to cut through the soil.",
 		"Click on the cutter with soil to weigh it.",
 		"Click the restart button to perform the experiment again.",
@@ -399,9 +399,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	init();
 
 	const tableData = [
-		{ "Soil Type": "Silt", "Dry Soil Mass(g)": "", "Water Content(%)": "" }, 
-		{ "Soil Type": "Sand", "Dry Soil Mass(g)": "", "Water Content(%)": "" }, 
-		{ "Soil Type": "Clay", "Dry Soil Mass(g)": "", "Water Content(%)": "" } 
+		{ "Soil Type": "Silt", "Wet Soil Mass(g)": "", "Water Content(%)": "" }, 
+		{ "Soil Type": "Sand", "Wet Soil Mass(g)": "", "Water Content(%)": "" }, 
+		{ "Soil Type": "Clay", "Wet Soil Mass(g)": "", "Water Content(%)": "" } 
 	];
 
 	const objNames = Object.keys(objs), extrasNames = Object.keys(extras);

@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				document.getElementById("output1").innerHTML = "Mass of cutter = " + String(10) + " g";
 			}
 
-			else if(step === 9)
+			else if(step === enabled.length - 2)
 			{
 				document.getElementById("output2").innerHTML = "Volume of soil = 800 cm" + "3".sup();
 				logic(tableData);

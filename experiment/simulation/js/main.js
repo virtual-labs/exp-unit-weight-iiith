@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', function(){
 					{
 						keys = keys.filter(function(val, index) {
 							return val != "dolly" && val != "rammer";
-						})
+						});
 					}
 				}
 			}

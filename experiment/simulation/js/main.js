@@ -83,7 +83,6 @@ document.addEventListener('DOMContentLoaded', function(){
 				if(small)
 				{
 					document.getElementById("observations").style.width = '85%';
-					document.getElementById("observations").style.marginLeft = '7.5%';
 				}
 			}
 			return step + 1;
@@ -253,12 +252,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		window.clearTimeout(tmHandle); 
 
 		document.getElementById("apparatus").style.display = 'block';
-		document.getElementById("observations").style.marginLeft = '0%';
-		document.getElementById("observations").style.width = '20%';
-		if(small)
-		{
-			document.getElementById("observations").style.width = '40%';
-		}
+		document.getElementById("observations").style.width = '';
 
 		table.innerHTML = "";
 		init();
@@ -430,11 +424,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		if(x.matches)	// If media query matches
 		{ 
 			small = true;
-			document.getElementById("observations").style.marginLeft = '0%';
-			document.getElementById("observations").style.width = '40%';
 			if(step === enabled.length - 1)
 			{
-				document.getElementById("observations").style.marginLeft = '7.5%';
 				document.getElementById("observations").style.width = '85%';
 			}
 		} 
@@ -442,8 +433,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		else
 		{
 			small = false;
-			document.getElementById("observations").style.marginLeft = '0%';
-			document.getElementById("observations").style.width = '20%';
 			if(step === enabled.length - 1)
 			{
 				document.getElementById("observations").style.width = '40%';
@@ -451,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	};
 
-	let x = window.matchMedia("(max-width: 700px)");
+	let x = window.matchMedia("(max-width: 1023px)");
 	responsiveTable(x); // Call listener function at run time
 	x.addListener(responsiveTable); // Attach listener function on state changes
 

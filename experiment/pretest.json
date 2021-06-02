@@ -1,18 +1,48 @@
-[
-{"question":"This is a Sample Question 1?",
-"answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
-          },
-"correctAnswer":"a"},
-{"question":"This is a Sample Question 2?",
-"answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
-          },
-"correctAnswer":"c"} 
-]
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "1. The unit weight of dry soil is greater than the unit weight of wet soil.",
+			"answers": {
+				"a": "True",
+				"b": "False",
+			},
+			"explanations": {
+				"a": "",
+				"b": "",
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "2. The unit weight of soil decreases due to submergence of water.",
+			"answers": {
+				"a": "True",
+				"b": "False",
+			},
+			"explanations": {
+				"a": "Buoyancy effect.",
+				"b": "",
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "a"
+		},
+		{
+			"question": "3. If the soil sample has porosity of 30% and specific gravity of solids G=2.7, then its dry unit weight will be ______",
+			"answers": {
+				"a": "18.350 kN/m3",
+				"b": "18.535 kN/m3",
+				"c": "18.640 kN/m3",
+				"d": "18.545 kN/m3",
+			},
+			"explanations": {
+				"a": "Given, Porosity n=30%=0.3, Specific gravity G=2.7, Voids ratio e = n / (1-n), e=0.3/(1-0.3)=0.429, Dry unit weight γd = Gγw/(1-e), γd=(2.7*9.81)/(11+0.429), γd=18.535 kN/m3.",
+				"b": "",
+				"c": "",
+				"d": "",
+			},
+			"difficulty": "advanced",
+			"correctAnswer": "b"
+		},
+	]
+}

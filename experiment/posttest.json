@@ -1,18 +1,52 @@
-[
-{"question":"This is a Sample Question 1?",
-"answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
-          },
-"correctAnswer":"a"},
-{"question":"This is a Sample Question 2?",
-"answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
-          },
-"correctAnswer":"c"} 
-]
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "1. The core cutter method can be used for gravels, boulders, or any other hard surface.",
+			"answers": {
+				"a": "True",
+				"b": "False",
+			},
+			"explanations": {
+				"a": "",
+				"b": "",
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "2. The field density of a natural soil deposit cannot be determined by_____ method.",
+			"answers": {
+				"a": "sand replacement",
+				"b": "oven-dry",
+				"c": "core cutter",
+				"d": "water displacement"
+			},
+			"explanations": {
+				"a": "The methods for determining field density are: sand replacement methodcore cutter methodwater displacement methodrubber balloon method. The oven-dry method is used for the determination of water content.",
+				"b": "",
+				"c": "",
+				"d": ""
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "3. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m3. After being completely dried in an oven, the mass of the sample is 1.800 kg. Specific gravity is 2.7. Unit weight of water is 10 kN/m3. The degree of saturation of soil is _____",
+			"answers": {
+				"a": "0.65",
+				"b": "0.70",
+				"c": "0.54",
+				"d": "0.61"
+			},
+			"explanations": {
+				"a": "It is a dirtect application of the formula.",
+				"b": "",
+				"c": "",
+				"d": ""
+			},
+			"difficulty": "advanced",
+			"correctAnswer": "c"
+		},
+	]
+}

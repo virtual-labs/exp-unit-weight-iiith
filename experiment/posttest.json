@@ -5,11 +5,11 @@
 			"question": "1. The core cutter method can be used for gravels, boulders, or any other hard surface.",
 			"answers": {
 				"a": "True",
-				"b": "False",
+				"b": "False"
 			},
 			"explanations": {
 				"a": "",
-				"b": "",
+				"b": ""
 			},
 			"difficulty": "beginner",
 			"correctAnswer": "b"
@@ -47,6 +47,6 @@
 			},
 			"difficulty": "advanced",
 			"correctAnswer": "c"
-		},
+		}
 	]
 }

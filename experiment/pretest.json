@@ -8,7 +8,7 @@
 				"b": "False"
 			},
 			"explanations": {
-				"a": "",
+				"a": "The presence of some water content adds to the weight of the soil with minimal change in volume.",
 				"b": ""
 			},
 			"difficulty": "beginner",
@@ -21,25 +21,42 @@
 				"b": "False"
 			},
 			"explanations": {
-				"a": "Buoyancy effect.",
-				"b": "Buoyancy effect."
+				"a": "",
+				"b": "When soil is submerged under water, a buoyant force acts on the soil leading to a decrease in the net weight of the soil and a consequent decrease in the unit weight."
 			},
 			"difficulty": "beginner",
 			"correctAnswer": "a"
 		},
 		{
-			"question": "3. If the soil sample has a porosity of 30% and a specific gravity of solids G = 2.7, then its dry unit weight will be ____",
+			"question": "3. A soil has a bulk density of 22 kN/m<sup>3</sup> and a dry density of 20 kN/m<sup>3</sup>. Determine the water content of the soil.",
 			"answers": {
-				"a": "18.350 kN/m^3",
-				"b": "18.535 kN/m^3",
-				"c": "18.640 kN/m^3",
-				"d": "18.545 kN/m^3"
+				"a": "8%",
+				"b": "10%",
+				"c": "12%",
+				"d": "None of the above"
 			},
 			"explanations": {
-				"a": "",
-				"b": "Given: Porosity n = 30% = 0.3; Specific gravity G = 2.7; Voids ratio e = n / (1 - n); e = 0.3 / (1 - 0.3) = 0.429; Dry unit weight γd = Gγw / (1 - e), γd = (2.7 * 9.81) / (11 + 0.429), γd = 18.535 kN/m3.",
-				"c": "",
-				"d": ""
+				"a": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>).",
+				"b": "",
+				"c": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>).",
+				"d": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>)."
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "4. If the soil sample has a porosity of 30% and a specific gravity of solids, G = 2.7, then its dry unit weight will be ____",
+			"answers": {
+				"a": "18.350 kN/m<sup>3</sup>",
+				"b": "18.535 kN/m<sup>3</sup>",
+				"c": "18.545 kN/m<sup>3</sup>",
+				"d": "18.640 kN/m<sup>3</sup>"
+			},
+			"explanations": {
+				"a": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight.",
+				"b": "",
+				"c": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight.",
+				"d": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight."
 			},
 			"difficulty": "advanced",
 			"correctAnswer": "b"

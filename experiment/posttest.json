@@ -8,7 +8,7 @@
 				"b": "False"
 			},
 			"explanations": {
-				"a": "",
+				"a": "It is difficult to cut through hard surfaces using the core cutter apparatus.",
 				"b": ""
 			},
 			"difficulty": "beginner",
@@ -25,14 +25,14 @@
 			"explanations": {
 				"a": "",
 				"b": "The methods for determining field density are: sand replacement method, core cutter method, water displacement method and rubber balloon method. The oven-dry method is used for the determination of water content.",
-				"c": "",
+				"c": "This method can be used as is demonstrated by this very experiment.",
 				"d": ""
 			},
 			"difficulty": "intermediate",
 			"correctAnswer": "b"
 		},
 		{
-			"question": "3. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m^3. After being completely dried in an oven, the mass of the sample is 1.800 kg. The specific gravity is 2.7. The unit weight of water is 10 kN/m^3. The degree of saturation of soil is ____",
+			"question": "3. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m<sup>3</sup>. After being completely dried in an oven, the mass of the sample is 1.800 kg. The specific gravity is 2.7. The unit weight of water is 10 kN/m<sup>3</sup>. The degree of saturation of soil is ____",
 			"answers": {
 				"a": "0.65",
 				"b": "0.70",
@@ -40,7 +40,7 @@
 				"d": "0.61"
 			},
 			"explanations": {
-				"a": "It is a dirtect application of the formula.",
+				"a": "It is a direct application of the formula.",
 				"b": "",
 				"c": "",
 				"d": ""

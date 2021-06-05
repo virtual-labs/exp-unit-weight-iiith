@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			this.width = width;
 			this.pos = [x, y];
 			this.img = new Image();
-			this.img.src = './images/soil sample.png';
+			this.img.src = './images/soil-sample.png';
 			this.img.onload = () => {ctx.drawImage(this.img, this.pos[0], this.pos[1], this.width, this.height);}; 
 		};
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			this.width = width;
 			this.pos = [x, y];
 			this.img = new Image();
-			this.img.src = './images/cut soil.png';
+			this.img.src = './images/cut-soil.png';
 			this.img.onload = () => {ctx.drawImage(this.img, this.pos[0], this.pos[1], this.width, this.height);}; 
 		};
 
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			this.width = width;
 			this.pos = [x, y];
 			this.img = new Image();
-			this.img.src = './images/uneven soil.png';
+			this.img.src = './images/uneven-soil.png';
 			this.img.onload = () => {ctx.drawImage(this.img, this.pos[0], this.pos[1], this.width, this.height);}; 
 		};
 
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			this.width = width;
 			this.pos = [x, y];
 			this.img = new Image();
-			this.img.src = './images/even soil.png';
+			this.img.src = './images/even-soil.png';
 			this.img.onload = () => {ctx.drawImage(this.img, this.pos[0], this.pos[1], this.width, this.height);}; 
 		};
 
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			this.width = width;
 			this.pos = [x, y];
 			this.img = new Image();
-			this.img.src = './images/weighing machine.png';
+			this.img.src = './images/weighing-machine.png';
 			this.img.onload = () => {ctx.drawImage(this.img, this.pos[0], this.pos[1], this.width, this.height);}; 
 		};
 

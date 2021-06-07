@@ -1,6 +1,4 @@
-1. IS : 2720 (Part II) – 1973, Method of Test for soil : Part II
-2. Soil Mechanics and Foundations.
-3. http://www.sciencedirect.com
-4. http://home.iitk.ac.in/~madhav/
-5. Geotechnical Laboratory of DGM, Thimphu Bhutan
-
+- IS : 2720 (Part II) – 1973, Method of Test for soil : Part II
+- Soil Mechanics and Foundations 3rd Edition, Muniram Budhu.
+- Soil Mechanics Laboratory Manual, Braja M. Das
+- [IITK Geotechnical Lab Manual](http://home.iitk.ac.in/~madhav/expt3.html)

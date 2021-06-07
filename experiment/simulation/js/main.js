@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	const restartButton = document.getElementById('restart');
 	const instrMsg = document.getElementById('procedure-message');
-	const wetDenseStrg = "Wet Density (g/cm" + "3".sup() + ")", dryDenseStrg = "Dry Density (g/cm" + "3".sup() + ")";
 
 	restartButton.addEventListener('click', function() {restart();});
 
@@ -17,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		const soilWater = { 'Silt': randomNumber(22.5, 27.5), 'Sand': randomNumber(12, 16), 'Clay': randomNumber(30, 50) }, soilDensity = { 'Silt': 1.46, 'Sand': 1.43, 'Clay': 1.39 };
 		tableData.forEach(function(row, index) {
 			const waterContent = soilWater[row['Soil Type']], ans = soilDensity[row['Soil Type']];
-			row[dryDenseStrg] = Number(ans);
-			row['Water Content(%)'] = Number(waterContent);
-			//row[wetDenseStrg] = (ans * (1 + waterContent / 100)).toFixed(2);
 			row['Wet Soil Mass(g)'] = (ans * (1 + waterContent / 100) * 800).toFixed(2);
+			row["Wet Density (g/cm^3)"] = (ans * (1 + waterContent / 100)).toFixed(2);
+			row['Water Content(%)'] = Number(waterContent);
+			row["Dry Density (g/cm^3)"] = Number(ans);
 		});
 	};
 
@@ -385,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		"Click on 'Dolly' in the apparatus menu to add a dolly to the workspace.",
 		"Click on 'Rammer' in the apparatus menu to add a rammer to the workspace.",
 		"Click on the rammer to cut through the soil.",
-		"Click on the cutter with soil to weigh it.",
+		"Click on the cutter with soil to weigh it. Finally, determine the water content of the soil sample. Use the following <a href=''>link</a> to learn more about water content determination.",
 		"Click the restart button to perform the experiment again.",
 	];
 
@@ -411,8 +410,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 
-	// Input Parameters 
-	let wetSoilMass = 100, soilType = "Loam";
 	canvas.addEventListener('mousemove', function(event) {check(event, translate, step, false);});
 	canvas.addEventListener('click', function(event) {
 		step = check(event, translate, step);

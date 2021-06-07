@@ -33,7 +33,7 @@
 				"a": "5%",
 				"b": "9%",
 				"c": "10%",
-				"d": "20%",
+				"d": "20%"
 			},
 			"explanations": {
 				"a": "This answer is most likely obtained by the application of an incorrect formula. The correct formula is: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Finally, just multiply by 100 to obtain the answer as a percentage. This formula is obtained by rearranging the equation used for dry density to instead solve for water content.",

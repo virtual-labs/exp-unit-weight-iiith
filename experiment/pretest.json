@@ -45,7 +45,7 @@
 			"correctAnswer": "c"
 		},
 		{
-			"question": "4. If the soil sample has a porosity of 30% and a specific gravity of solids, G = 2.7, then its dry unit weight will be ____",
+			"question": "4. If the soil sample has a porosity of 30% and a specific gravity of solids, G = 2.7, then its dry unit weight will be ____ (assume unit weight of water, γ<sub>w</sub> = 9.81)",
 			"answers": {
 				"a": "18.350 kN/m<sup>3</sup>",
 				"b": "18.535 kN/m<sup>3</sup>",
@@ -53,10 +53,10 @@
 				"d": "18.640 kN/m<sup>3</sup>"
 			},
 			"explanations": {
-				"a": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight.",
+				"a": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e).", 
 				"b": "",
-				"c": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight.",
-				"d": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e) where we assume γ<sub>w</sub> = g = 9.81 due to the question being on unit weight."
+				"c": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e).", 
+				"d": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e)." 
 			},
 			"difficulty": "advanced",
 			"correctAnswer": "b"

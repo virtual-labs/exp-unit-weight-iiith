@@ -23,27 +23,27 @@
 				"d": "Water Displacement"
 			},
 			"explanations": {
-				"a": "",
+				"a": "This method can in fact be used for field density determination. <a href='https://civilseek.com/sand-replacement-method/'>Click here</a> to learn more about this method.",
 				"b": "The methods for determining field density are: sand replacement method, core cutter method, water displacement method and rubber balloon method. The oven-dry method is used for the determination of water content.",
 				"c": "This method can be used as is demonstrated by this very experiment.",
-				"d": ""
+				"d": "This method can in fact be used for field density determination. <a href='https://theconstructor.org/practical-guide/dry-density-soil-water-displacement/2696/'>Click here</a> to learn more about this method."
 			},
 			"difficulty": "intermediate",
 			"correctAnswer": "b"
 		},
 		{
-			"question": "3. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m<sup>3</sup>. After being completely dried in an oven, the mass of the sample is 1.800 kg. The specific gravity is 2.7. The unit weight of water is 10 kN/m<sup>3</sup>. The degree of saturation of soil is ____",
+			"question": "3. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m<sup>3</sup>. After being completely dried in an oven, the mass of the sample is 1.800 kg. The specific gravity (G) is 2.7. The unit weight of water (γ<sup>w</sup>) is 10 kN/m<sup>3</sup>. The degree of saturation of soil is ____",
 			"answers": {
-				"a": "0.65",
-				"b": "0.70",
+				"a": "0.45",
+				"b": "0.51",
 				"c": "0.54",
-				"d": "0.61"
-			},
+				"d": "0.65",
+			}
 			"explanations": {
-				"a": "It is a direct application of the formula.",
-				"b": "",
+				"a": "First we find the wet (γ<sub>t</sub>) and dry (γ<sub>d</sub>) densities as mass / volume. Next we find the water content of the soil using the formula: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Then we determine the voids ratio as: e = (G * γ<sub>w</sub> / γ<sub>d</sub>) - 1. Finally, we obtain the saturation as: S<sub>r</sub> = w * G / e.",
+				"b": "First we find the wet (γ<sub>t</sub>) and dry (γ<sub>d</sub>) densities as mass / volume. Next we find the water content of the soil using the formula: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Then we determine the voids ratio as: e = (G * γ<sub>w</sub> / γ<sub>d</sub>) - 1. Finally, we obtain the saturation as: S<sub>r</sub> = w * G / e.",
 				"c": "",
-				"d": ""
+				"d": "First we find the wet (γ<sub>t</sub>) and dry (γ<sub>d</sub>) densities as mass / volume. Next we find the water content of the soil using the formula: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Then we determine the voids ratio as: e = (G * γ<sub>w</sub> / γ<sub>d</sub>) - 1. Finally, we obtain the saturation as: S<sub>r</sub> = w * G / e."
 			},
 			"difficulty": "advanced",
 			"correctAnswer": "c"

@@ -37,8 +37,8 @@
 				"a": "0.45",
 				"b": "0.51",
 				"c": "0.54",
-				"d": "0.65",
-			}
+				"d": "0.65"
+			},
 			"explanations": {
 				"a": "First we find the wet (γ<sub>t</sub>) and dry (γ<sub>d</sub>) densities as mass / volume. Next we find the water content of the soil using the formula: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Then we determine the voids ratio as: e = (G * γ<sub>w</sub> / γ<sub>d</sub>) - 1. Finally, we obtain the saturation as: S<sub>r</sub> = w * G / e.",
 				"b": "First we find the wet (γ<sub>t</sub>) and dry (γ<sub>d</sub>) densities as mass / volume. Next we find the water content of the soil using the formula: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Then we determine the voids ratio as: e = (G * γ<sub>w</sub> / γ<sub>d</sub>) - 1. Finally, we obtain the saturation as: S<sub>r</sub> = w * G / e.",

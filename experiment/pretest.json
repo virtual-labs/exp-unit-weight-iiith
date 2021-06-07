@@ -22,7 +22,7 @@
 			},
 			"explanations": {
 				"a": "",
-				"b": "When soil is submerged under water, a buoyant force acts on the soil leading to a decrease in the net weight of the soil and a consequent decrease in the unit weight."
+				"b": "When soil is submerged under water, an upward buoyant force acts on the soil opposite to the gravitational force leading to a decrease in the net weight of the soil and a consequent decrease in the unit weight."
 			},
 			"difficulty": "beginner",
 			"correctAnswer": "a"
@@ -30,19 +30,19 @@
 		{
 			"question": "3. A soil has a bulk density of 22 kN/m<sup>3</sup> and a dry density of 20 kN/m<sup>3</sup>. Determine the water content of the soil.",
 			"answers": {
-				"a": "8%",
-				"b": "10%",
-				"c": "12%",
-				"d": "None of the above"
+				"a": "5%",
+				"b": "9%",
+				"c": "10%",
+				"d": "20%",
 			},
 			"explanations": {
-				"a": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>).",
-				"b": "",
-				"c": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>).",
-				"d": "It is a direct application of the dry density formula. Simply solve for water content instead of dry density. The rearranged equation will be: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>)."
+				"a": "This answer is most likely obtained by the application of an incorrect formula. The correct formula is: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Finally, just multiply by 100 to obtain the answer as a percentage. This formula is obtained by rearranging the equation used for dry density to instead solve for water content.",
+				"b": "This answer is most likely obtained by the application of an incorrect formula where the bulk/wet density is taken in the denominator instead of the dry density. The correct formula is: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Finally, just multiply by 100 to obtain the answer as a percentage. This formula is obtained by rearranging the equation used for dry density to instead solve for water content.",
+				"c": "",
+				"d": "This answer is most likely obtained by a calculation mistake where the numerator is not divided by 2 but the denominator is."
 			},
 			"difficulty": "intermediate",
-			"correctAnswer": "b"
+			"correctAnswer": "c"
 		},
 		{
 			"question": "4. If the soil sample has a porosity of 30% and a specific gravity of solids, G = 2.7, then its dry unit weight will be ____",

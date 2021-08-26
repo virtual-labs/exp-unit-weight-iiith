@@ -1,0 +1,4 @@
+- IS : 2720 (Part II) – 1973, Method of Test for soil : Part II
+- Soil Mechanics and Foundations 3rd Edition, Muniram Budhu.
+- Soil Mechanics Laboratory Manual, Braja M. Das
+- [IITK Geotechnical Lab Manual](http://home.iitk.ac.in/~madhav/expt3.html)

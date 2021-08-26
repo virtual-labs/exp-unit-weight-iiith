@@ -1,0 +1,7 @@
+1. Add a weighing machine and a cutter from the apparatus menu and weigh the cutter by clicking on it (W1). Observe the change in the observations menu. The cutter is weighed to account for its weight in future measurements of other components added to the cutter.
+2. Add a soil sample from the apparatus menu and even it out by clicking on it. This is done so as to get a proper volume of soil easily modeled as that of a cylinder when taken in the cutter.
+3. Click on the cutter to move it to the soil for cutting.
+4. Add a dolly and a rammer from the apparatus menu and click on the rammer to cut through the soil.
+5. Click on the cutter filled with soil to move it to the weighing machine and weigh it. This gives us the weight of the wet soil + cutter and we can easily obtain the weight of the wet soil alone by simply subtracting the weight of the cutter as is visible from the values in the observations table.
+6. We also obtain the volume of the soil by simply measuring its height (h) in the cutter and using the cutter's internal radius (r) in the cylinder volume formula given by: V = PI * r<sup>2</sup> * h
+7. Check the observation table. The table presents the observations (including water content, <a href='https://smfe-iiith.vlabs.ac.in/exp1/Introduction.html?domain=Civil%20Engineering&lab=Soil%20Mechanics%20Lab' target='_blank'>click here</a> to learn more) for different types of soil as different soils have different textures and densities.

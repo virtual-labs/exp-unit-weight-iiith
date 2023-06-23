@@ -1,0 +1,65 @@
+{
+	"version": 2.0,
+	"questions": [
+		{
+			"question": "1. The unit weight of dry soil is greater than the unit weight of wet soil.",
+			"answers": {
+				"a": "True",
+				"b": "False"
+			},
+			"explanations": {
+				"a": "The presence of some water content adds to the weight of the soil with minimal change in volume.",
+				"b": ""
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "b"
+		},
+		{
+			"question": "2. The unit weight of soil decreases due to submergence of water.",
+			"answers": {
+				"a": "True",
+				"b": "False"
+			},
+			"explanations": {
+				"a": "",
+				"b": "When soil is submerged under water, an upward buoyant force acts on the soil opposite to the gravitational force leading to a decrease in the net weight of the soil and a consequent decrease in the unit weight."
+			},
+			"difficulty": "beginner",
+			"correctAnswer": "a"
+		},
+		{
+			"question": "3. A soil has a bulk density of 22 kN/m<sup>3</sup> and a dry density of 20 kN/m<sup>3</sup>. Determine the water content of the soil.",
+			"answers": {
+				"a": "5%",
+				"b": "9%",
+				"c": "10%",
+				"d": "20%"
+			},
+			"explanations": {
+				"a": "This answer is most likely obtained by the application of an incorrect formula. The correct formula is: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Finally, just multiply by 100 to obtain the answer as a percentage. This formula is obtained by rearranging the equation used for dry density to instead solve for water content.",
+				"b": "This answer is most likely obtained by the application of an incorrect formula where the bulk/wet density is taken in the denominator instead of the dry density. The correct formula is: Water content, w = (wet density(γ<sub>t</sub>) - dry density(γ<sub>d</sub>)) / dry density(γ<sub>d</sub>). Finally, just multiply by 100 to obtain the answer as a percentage. This formula is obtained by rearranging the equation used for dry density to instead solve for water content.",
+				"c": "",
+				"d": "This answer is most likely obtained by a calculation mistake where the numerator is not divided by 2 but the denominator is."
+			},
+			"difficulty": "intermediate",
+			"correctAnswer": "c"
+		},
+		{
+			"question": "4. If the soil sample has a porosity of 30% and a specific gravity of solids, G = 2.7, then its dry unit weight will be ____ (assume unit weight of water, γ<sub>w</sub> = 9.81)",
+			"answers": {
+				"a": "18.350 kN/m<sup>3</sup>",
+				"b": "18.535 kN/m<sup>3</sup>",
+				"c": "18.545 kN/m<sup>3</sup>",
+				"d": "18.640 kN/m<sup>3</sup>"
+			},
+			"explanations": {
+				"a": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e).", 
+				"b": "",
+				"c": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e).", 
+				"d": "First we must find the voids ratio as e = n / (1 - n) where n is the porosity. Then we can find the dry unit weight using the formula γ<sub>d</sub> = G * γ<sub>w</sub> / (1 + e)." 
+			},
+			"difficulty": "advanced",
+			"correctAnswer": "b"
+		}
+	]
+}

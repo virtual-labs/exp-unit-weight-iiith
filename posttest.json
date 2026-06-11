@@ -1,0 +1,154 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The core cutter method can be used for gravels, boulders, or any other hard surface.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Incorrect. It is difficult to drive the core cutter into hard or stony surfaces without damaging the tool or getting an unrepresentative sample.",
+        "b": "Correct. The core cutter method is primarily suitable for soft, fine-grained soils like clay and silt, and not for gravelly or hard soils."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "2. Which of the following is the most accurate method for determining the field density of soil?",
+      "answers": {
+        "a": "Core cutter method",
+        "b": "Sand replacement method",
+        "c": "Water displacement method",
+        "d": "Rubber balloon method"
+      },
+      "explanations": {
+        "a": "Incorrect. While useful, it is limited to specific soil types and can be less accurate due to sample disturbance.",
+        "b": "Correct. The sand replacement method is versatile and considered highly accurate for a wide range of soil types, including gravelly soils.",
+        "c": "Incorrect. This method is used for irregular-shaped soil lumps, not typically for general field density.",
+        "d": "Incorrect. This method is less common and can be prone to errors if the balloon doesn't fit the hole perfectly."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "3. The unit of unit weight in the SI system is:",
+      "answers": {
+        "a": "kg/m³",
+        "b": "kN/m³",
+        "c": "N/m²",
+        "d": "g/cm³"
+      },
+      "explanations": {
+        "a": "Incorrect. This is the unit for density (mass/volume).",
+        "b": "Correct. Unit weight is weight (force) per unit volume, measured in kilo-Newtons per cubic meter.",
+        "c": "Incorrect. This is the unit for pressure or stress.",
+        "d": "Incorrect. This is the unit for density in the CGS system."
+      },
+      "difficulty": "beginner",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "4. The field density of a natural soil deposit cannot be determined by ____ method.",
+      "answers": {
+        "a": "Sand Replacement",
+        "b": "Oven Dry",
+        "c": "Core Cutter",
+        "d": "Water Displacement"
+      },
+      "explanations": {
+        "a": "Incorrect. This is a standard field method for density.",
+        "b": "Correct. The oven-dry method is used for determining water content, not field density.",
+        "c": "Incorrect. This is a common method for field density in soft soils.",
+        "d": "Incorrect. This method can be used for determining the volume of irregular soil samples to find density."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "5. In the sand replacement method, the sand used should be:",
+      "answers": {
+        "a": "Uniformly graded and dry",
+        "b": "Well graded and wet",
+        "c": "Any locally available soil",
+        "d": "Fine silt"
+      },
+      "explanations": {
+        "a": "Correct. The sand must be dry and uniformly graded (usually passing 600 micron and retained on 300 micron) to ensure a consistent and known calibrated density.",
+        "b": "Incorrect. Wet or well-graded sand would have a variable density, making the test inaccurate.",
+        "c": "Incorrect. Standard sand with known properties is required for calibration.",
+        "d": "Incorrect. Silt would be too fine and its density would be too sensitive to moisture and packing."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "6. The water displacement method for density is typically applied to:",
+      "answers": {
+        "a": "Large field areas",
+        "b": "Irregularly shaped, cohesive soil lumps",
+        "c": "Dry sands",
+        "d": "Saturated clays in-situ"
+      },
+      "explanations": {
+        "a": "Incorrect. It is a laboratory-based method for small samples.",
+        "b": "Correct. It is used to find the volume of an irregular lump of cohesive soil by coating it in paraffin wax and measuring displaced water.",
+        "c": "Incorrect. Dry sands would collapse and cannot be tested this way.",
+        "d": "Incorrect. This is for laboratory samples, not in-situ testing."
+      },
+      "difficulty": "intermediate",
+      "correctAnswer": "b"
+    },
+    {
+      "question": "7. In its natural condition, a soil sample has a mass of 1.980 kg and a volume of 0.001 m³. After being completely dried in an oven, the mass of the sample is 1.800 kg. The specific gravity (G) is 2.7. The unit weight of water (γ_w) is 10 kN/m³. The degree of saturation of soil is ____",
+      "answers": {
+        "a": "0.45",
+        "b": "0.51",
+        "c": "0.54",
+        "d": "0.65"
+      },
+      "explanations": {
+        "a": "Incorrect. Recheck the steps: calculate water content, dry density, and void ratio first.",
+        "b": "Incorrect. This value does not match the derived saturation formula S = (w * G) / e.",
+        "c": "Correct. w = (1.98-1.8)/1.8 = 0.1. γ_d = 1.8/0.001 = 1800 kg/m³ = 18 kN/m³. e = (G * γ_w / γ_d) - 1 = (2.7 * 10 / 18) - 1 = 1.5 - 1 = 0.5. S = (0.1 * 2.7) / 0.5 = 0.54.",
+        "d": "Incorrect. Ensure you are using the correct dry mass and volume for density calculations."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "c"
+    },
+    {
+      "question": "8. A soil sample has a void ratio of 0.5 and its porosity is to be determined. What is the value?",
+      "answers": {
+        "a": "0.33",
+        "b": "0.50",
+        "c": "0.66",
+        "d": "0.25"
+      },
+      "explanations": {
+        "a": "Correct. Porosity n = e / (1 + e) = 0.5 / (1 + 0.5) = 0.5 / 1.5 = 0.333 or 33.3%.",
+        "b": "Incorrect. Porosity is always less than the void ratio.",
+        "c": "Incorrect. This would be the result if you used e / (1 - e), which is the formula for e from n.",
+        "d": "Incorrect. This does not follow the relationship between n and e."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "a"
+    },
+    {
+      "question": "9. If the water content of a fully saturated soil is 25% and G = 2.7, what is the saturated unit weight (γ_sat) in kN/m³? (γ_w = 10 kN/m³)",
+      "answers": {
+        "a": "18.5 kN/m³",
+        "b": "20.2 kN/m³",
+        "c": "21.6 kN/m³",
+        "d": "19.8 kN/m³"
+      },
+      "explanations": {
+        "a": "Incorrect. This value is too low for a saturated soil with these properties.",
+        "b": "Correct. For saturated soil, e = w * G = 0.25 * 2.7 = 0.675. γ_sat = [(G + e) / (1 + e)] * γ_w = [(2.7 + 0.675) / (1 + 0.675)] * 10 = (3.375 / 1.675) * 10 = 20.15 ≈ 20.2 kN/m³.",
+        "c": "Incorrect. Check your void ratio and saturated unit weight formula.",
+        "d": "Incorrect. This value is close but doesn't match the calculation."
+      },
+      "difficulty": "advanced",
+      "correctAnswer": "b"
+    }
+  ]
+}

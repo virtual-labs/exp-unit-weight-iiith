@@ -1,1 +1,1 @@
-To determine the field density or unit weight of soil by the core cutter method.
+To determine the field density or unit weight of a soil sample using the core cutter method.
